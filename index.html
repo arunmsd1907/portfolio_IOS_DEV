@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Arun Kumar M. | iOS Developer & AI/ML Engineer Portfolio</title>
+    <meta name="description"
+        content="Professional portfolio of Arun Kumar M., an entry-level Computer Science graduate specializing in Swift-based iOS application development and Machine Learning solutions. Explore projects, skills, and experience.">
+    <meta name="keywords"
+        content="Arun Kumar M, iOS Developer, Swift, SwiftUI, UIKit, Xcode, Python, Machine Learning, AI Engineer, FastAPI, Portfolio, Software Engineer Chennai">
+    <meta name="author" content="Arun Kumar M.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arunkumar-portfolio.vercel.app/">
+    <meta property="og:title" content="Arun Kumar M. | iOS Developer & AI/ML Engineer">
+    <meta property="og:description"
+        content="Entry-level Computer Science graduate blending robust Swift-based iOS app development with intelligent AI/ML models. Check out my featured projects and experience.">
+    <meta property="og:image" content="assets/project-weather.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://arunkumar-portfolio.vercel.app/">
+    <meta property="twitter:title" content="Arun Kumar M. | iOS Developer & AI/ML Engineer">
+    <meta property="twitter:description"
+        content="Entry-level Computer Science graduate blending robust Swift-based iOS app development with intelligent AI/ML models. Check out my featured projects and experience.">
+    <meta property="twitter:image" content="assets/project-weather.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZndAg6KliRypTjQog8tQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fallback FontAwesome in case CDN fails -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor Glow effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container container">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>ArunKumar<span class="logo-accent">.M /&gt;</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active" id="link-hero">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
+                    <li><a href="#education" class="nav-link" id="link-education">Education</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-moon theme-icon-dark" id="theme-icon"></i>
+                </button>
+
+                <!-- Resume Quick Download for Header -->
+                <a href="assets/M. ArunKumar_IOS_Resume.pdf" download="M. ArunKumar_IOS_Resume.pdf"
+                    class="btn btn-sm btn-outline nav-resume-btn" id="header-resume-btn">
+                    <i class="fa-solid fa-download"></i> <span>Resume</span>
+                </a>
+
+                <!-- Mobile Menu Hamburger -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-gradients">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="container hero-grid">
+                <div class="hero-content scroll-reveal fade-left">
+                    <span class="hero-badge"><i class="fa-solid fa-circle-check"></i> Available for Opportunities</span>
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span><br>
+                        <span class="name-text">Arun Kumar. M</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="typing-text" id="typing-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-desc">
+                        An entry-level Computer Science graduate combining robust iOS development using Swift/Xcode with
+                        predictive Artificial Intelligence and Machine Learning models. Passionate about building fluid,
+                        user-friendly mobile applications and designing data-driven systems.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+                            <i class="fa-solid fa-code"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+                            <i class="fa-solid fa-paper-plane"></i> Let's Talk
+                        </a>
+                        <a href="assets/M. ArunKumar_IOS_Resume.pdf" download="M. ArunKumar_IOS_Resume.pdf"
+                            class="btn btn-outline" id="hero-cta-resume">
+                            <i class="fa-solid fa-arrow-down-to-line"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect with me:</span>
+                        <div class="social-links">
+                            <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                aria-label="GitHub Profile" id="hero-social-github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/arunkumar-m-0784b4259" target="_blank" rel="noopener"
+                                aria-label="LinkedIn Profile" id="hero-social-linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:marunkumar.ak19@gmail.com" aria-label="Email Address"
+                                id="hero-social-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="tel:+916382827234" aria-label="Phone Number" id="hero-social-phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual scroll-reveal fade-right">
+                    <div class="profile-interactive-container">
+                        <!-- Orbiting animation rings -->
+                        <div class="orbiting-ring orbit-ring-1"></div>
+                        <div class="orbiting-ring orbit-ring-2"></div>
+                        <div class="orbiting-ring orbit-ring-3"></div>
+                        
+                        <!-- Floating Badges / Info Cards -->
+                        <div class="floating-badge badge-ios">
+                            <span class="badge-icon"><i class="fa-brands fa-apple"></i></span>
+                            <div class="badge-text">
+                                <span class="badge-title">iOS Developer</span>
+                                <span class="badge-subtitle">SwiftUI & UIKit</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-ml">
+                            <span class="badge-icon"><i class="fa-solid fa-diagram-project"></i></span>
+                            <div class="badge-text">
+                                <span class="badge-title">3+ Core Projects</span>
+                                <span class="badge-subtitle">iOS & ML Solutions</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-cgpa">
+                            <span class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <div class="badge-text">
+                                <span class="badge-title">9.02 CGPA</span>
+                                <span class="badge-subtitle">J.N.N Institute</span>
+                            </div>
+                        </div>
+
+                        <!-- Main profile frame -->
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image-glow"></div>
+                            <div class="profile-image-inner">
+                                <img src="assets/profile.png" alt="Arun Kumar M. Profile Picture" class="profile-main-img" id="hero-profile-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tagline">About Me</span>
+                    <h2 class="section-title">My Journey & Drive</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text scroll-reveal fade-left">
+                        <h3>Combining Mobile Software & Intelligent Systems</h3>
+                        <p class="about-p">
+                            I am a highly motivated Computer Science and Engineering graduate with hands-on development
+                            experience. During my academic journey at J.N.N Institute of Engineering, I maintained a
+                            high academic standard (<strong>CGPA of 9.02</strong>) while actively diving into
+                            specialized software domains.
+                        </p>
+                        <p class="about-p">
+                            My core technical passion lies in <strong>iOS Development</strong>. I enjoy crafting smooth,
+                            reactive layouts using <strong>SwiftUI</strong> and structural, scalable applications with
+                            <strong>UIKit & MVC architecture</strong>. Over the course of my projects, I've integrated
+                            external REST APIs (such as OpenWeatherMap), implemented structured local storage, and
+                            configured user management systems through <strong>Firebase</strong>.
+                        </p>
+                        <p class="about-p">
+                            In parallel, I am deeply intrigued by the capabilities of <strong>Artificial Intelligence
+                                and Machine Learning</strong>. I've designed predictive algorithms using Python and
+                            FastAPI, preprocessing real-time sensor streams, and evaluating classification and
+                            regression models. My goal is to bridge these two worlds, deploying smart, client-side ML
+                            capabilities onto high-performance mobile devices.
+                        </p>
+
+                        <div class="about-extra-info">
+                            <div class="info-group">
+                                <h4><i class="fa-solid fa-earth-americas"></i> Languages</h4>
+                                <ul class="info-list">
+                                    <li><strong>English:</strong> Professional Working Proficiency</li>
+                                    <li><strong>Tamil:</strong> Native / Bilingual Proficiency</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-group">
+                                <h4><i class="fa-solid fa-puzzle-piece"></i> Core Soft Skills</h4>
+                                <div class="soft-skills-badges">
+                                    <span class="badge badge-soft"><i class="fa-solid fa-people-group"></i>
+                                        Leadership</span>
+                                    <span class="badge badge-soft"><i class="fa-solid fa-clock"></i> Time
+                                        Management</span>
+                                    <span class="badge badge-soft"><i class="fa-solid fa-rotate"></i>
+                                        Adaptability</span>
+                                    <span class="badge badge-soft"><i class="fa-solid fa-handshake"></i>
+                                        Collaboration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cards-wrapper scroll-reveal fade-right">
+                        <div class="about-card">
+                            <div class="about-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="about-card-info">
+                                <h4>Rigorous Academic Base</h4>
+                                <p>Solid conceptual foundation in DBMS, Algorithms, Object-Oriented Design, and Software
+                                    Architectures.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon"><i class="fa-brands fa-apple"></i></div>
+                            <div class="about-card-info">
+                                <h4>iOS Centric Development</h4>
+                                <p>Skilled in Xcode, Swift, SwiftUI, UIKit, and App Lifecycle management with Apple
+                                    design patterns.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="about-card-info">
+                                <h4>AI & Data Science Analytics</h4>
+                                <p>Capable of preprocessing complex datasets, extracting trends (EDA), and training
+                                    predictive systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section section-padding section-bg" id="skills">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tagline">My Stack</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Swift</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C Programming</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Libraries & Frameworks -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Libraries & Frameworks</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SwiftUI</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UIKit</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Firebase (Auth, DB, Firestore)</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">FastAPI & Streamlit</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-microchip"></i>
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Supervised Learning (Classification / Regression)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Scikit-learn</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Model Evaluation & Feature Selection</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Tooling -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h3>Databases & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Xcode & VS Code</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL & Relational Databases</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tagline">My Creations</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="project-filters scroll-reveal" id="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+                    <button class="filter-btn" data-filter="ios" id="filter-ios">iOS / Swift Apps</button>
+                    <button class="filter-btn" data-filter="ml" id="filter-ml">AI / Machine Learning</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: Weather App (iOS) -->
+                    <article class="project-card scroll-reveal" data-category="ios" id="project-weather-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-weather.png" alt="Weather iOS App Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                    class="project-link" aria-label="View Github Repository"
+                                    id="project-weather-git-overlay">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tag">iOS / UIKit</div>
+                            <h3 class="project-title">Real-Time Weather App</h3>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-triangle-exclamation"></i> The
+                                    Problem:</span>
+                                <p class="block-text">Standard mobile weather solutions often present cluttered
+                                    interfaces or laggy updates, necessitating an optimized native iOS implementation to
+                                    parse live meteorological data efficiently.</p>
+                            </div>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-square-poll-horizontal"></i> Solution &
+                                    Architecture:</span>
+                                <p class="block-text">Built a responsive weather application utilizing <strong>Swift and
+                                        UIKit</strong>. Applied clean <strong>MVC architecture</strong> to decouple
+                                    visual rendering from network request objects. Integrated
+                                    <strong>URLSession</strong> to pull current data and projections asynchronously.
+                                </p>
+                            </div>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-trophy"></i> Key Achievements:</span>
+                                <ul class="block-list">
+                                    <li>Implemented reliable JSON parsing endpoints using standard decodable models.
+                                    </li>
+                                    <li>Created dynamically styling layouts that adapt weather icons and colors based on
+                                        returned coordinates.</li>
+                                    <li>Designed fluid animations for weather parameter switches.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>Swift</span>
+                                <span>UIKit</span>
+                                <span>URLSession</span>
+                                <span>OpenWeatherMap API</span>
+                                <span>JSON</span>
+                                <span>MVC</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                    class="btn btn-sm btn-primary" id="project-weather-code">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline demo-btn" id="project-weather-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Todo App (iOS) -->
+                    <article class="project-card scroll-reveal" data-category="ios" id="project-todo-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-todo.png" alt="Todo App SwiftUI Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                    class="project-link" aria-label="View Github Repository"
+                                    id="project-todo-git-overlay">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tag">iOS / SwiftUI</div>
+                            <h3 class="project-title">Cloud-Sync Task Manager</h3>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-triangle-exclamation"></i> The
+                                    Problem:</span>
+                                <p class="block-text">Users require a zero-friction dashboard to record, update, and
+                                    manage tasks across devices seamlessly, calling for dynamic sync protocols that
+                                    don't block mobile threads.</p>
+                            </div>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-square-poll-horizontal"></i> Solution &
+                                    Architecture:</span>
+                                <p class="block-text">Designed a modern iOS application with <strong>SwiftUI</strong>.
+                                    Leveraged <strong>Firebase Authentication</strong> to enforce secure user profiles,
+                                    and mapped standard data structures to <strong>Firebase Database /
+                                        Firestore</strong> to sync CRUD workflows instantly in the background.</p>
+                            </div>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-trophy"></i> Key Achievements:</span>
+                                <ul class="block-list">
+                                    <li>Implemented offline-first caching allowing task actions when network status is
+                                        lost.</li>
+                                    <li>Created responsive layouts featuring dark mode styling using SwiftUI's
+                                        declarative modifiers.</li>
+                                    <li>Integrated Firebase triggers for dynamic list reordering and state sync.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>Swift</span>
+                                <span>SwiftUI</span>
+                                <span>Firebase Auth</span>
+                                <span>Firestore Database</span>
+                                <span>Xcode</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                    class="btn btn-sm btn-primary" id="project-todo-code">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline demo-btn" id="project-todo-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Vessel Predictor (ML) -->
+                    <article class="project-card scroll-reveal" data-category="ml" id="project-vessel-card">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-vessel.png" alt="Vessel Prediction Project Dashboard Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                    class="project-link" aria-label="View Github Repository"
+                                    id="project-vessel-git-overlay">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tag">Machine Learning / Python</div>
+                            <h3 class="project-title">Vessel Turnaround Predictor</h3>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-triangle-exclamation"></i> The
+                                    Problem:</span>
+                                <p class="block-text">Vessel queuing at commercial ports is subject to high
+                                    unpredictability, causing supply chain backlogs. Estimating exact turnaround timings
+                                    beforehand is crucial for port scheduling.</p>
+                            </div>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-square-poll-horizontal"></i> Solution &
+                                    Architecture:</span>
+                                <p class="block-text">Architected an end-to-end Machine Learning pipeline in
+                                    <strong>Python</strong>. Engineered features using maritime Automatic Identification
+                                    System (AIS) streams from the <strong>AISStream API</strong>. Generated predictive
+                                    engines using regression techniques and served insights through a custom
+                                    <strong>FastAPI</strong> microservice.
+                                </p>
+                            </div>
+
+                            <div class="project-block">
+                                <span class="block-title"><i class="fa-solid fa-trophy"></i> Key Achievements:</span>
+                                <ul class="block-list">
+                                    <li>Successfully cleaned, normalized, and preprocessed huge files of
+                                        spatial-temporal coordinates.</li>
+                                    <li>Built REST APIs that deliver predictions in real-time.</li>
+                                    <li>Constructed an interactive Streamlit and HTML visualization panel displaying
+                                        port occupancy levels and ship analytics.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>FastAPI</span>
+                                <span>AISStream API</span>
+                                <span>Pandas/Numpy</span>
+                                <span>Streamlit</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                    class="btn btn-sm btn-primary" id="project-vessel-code">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline demo-btn" id="project-vessel-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="experience-section section-padding section-bg" id="experience">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tagline">My Training</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Nov 2025 - Jan 2026</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title-group">
+                                    <h3>Road Accidents Exploratory Data Analysis (EDA) Internship</h3>
+                                    <h4>Infosys Springboard | Internship 6.0</h4>
+                                </div>
+                                <span class="experience-badge"><i class="fa-solid fa-briefcase"></i> Intern</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Active data analytics intern tasked with cleaning, pre-processing, and generating
+                                actionable statistical patterns from highly unstructured road accident data.
+                            </p>
+                            <ul class="timeline-list">
+                                <li>Cleaned and imputed massive dataset files using statistical regression models and
+                                    outlier elimination algorithms.</li>
+                                <li>Created interactive data visualizations and geographical accident heatmaps,
+                                    determining high-risk variables (weather, lighting, and speed bounds).</li>
+                                <li>Prepared comprehensive EDA dashboards and summary reporting to drive data-centric
+                                    decisions.</li>
+                                <li>Completed industry-structured workflows to master robust model validation and data
+                                    ETL pipelines.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Data Analysis</span>
+                                <span>Python</span>
+                                <span>EDA</span>
+                                <span>Data Cleaning</span>
+                                <span>Statistical Modeling</span>
+                                <span>Pandas & Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2025 - Oct 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title-group">
+                                    <h3>iOS App Development Masterclass</h3>
+                                    <h4>iOS Academy</h4>
+                                </div>
+                                <span class="experience-badge"><i class="fa-solid fa-laptop-code"></i> Developer
+                                    Trainee</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Undertook high-intensity professional-grade training in native iOS architecture,
+                                application life cycle controls, and Swift fundamentals.
+                            </p>
+                            <ul class="timeline-list">
+                                <li>Mastered core design principles including UI Layout lifecycle, constraints, and
+                                    SwiftUI state management mechanics.</li>
+                                <li>Engineered local data-binding and weather application prototypes consuming network
+                                    APIs with custom JSON decoders.</li>
+                                <li>Enforced MVC structural practices for iOS development, decoupling view files and
+                                    preventing class bloating.</li>
+                                <li>Developed hands-on experience using Git and GitHub branch-management protocols for
+                                    testing and release deployments.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>iOS Development</span>
+                                <span>Swift</span>
+                                <span>UIKit</span>
+                                <span>Xcode</span>
+                                <span>REST APIs</span>
+                                <span>MVC Design</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section section-padding" id="education">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tagline">Academic Journey</span>
+                    <h2 class="section-title">Education & Credentials</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Higher Education -->
+                    <div class="education-card scroll-reveal">
+                        <div class="edu-header">
+                            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="edu-meta">
+                                <span class="edu-duration">May 2022 – May 2026</span>
+                                <h3>B.E. Computer Science and Engineering</h3>
+                                <h4>J.N.N Institute of Engineering, Chennai, Tamilnadu</h4>
+                            </div>
+                        </div>
+                        <div class="edu-body">
+                            <div class="edu-stat">
+                                <span class="stat-lbl">CGPA Academic Grade:</span>
+                                <span class="stat-val grade-accent">9.02 / 10.0</span>
+                            </div>
+                            <p class="edu-desc">Deeply covered core software fundamentals, including Database
+                                Management, Operating Systems, Computer Architecture, and Artificial Intelligence.</p>
+
+                            <div class="edu-coursework">
+                                <h5>Relevant Coursework:</h5>
+                                <div class="course-tags">
+                                    <span>Swift Programming</span>
+                                    <span>SwiftUI & UIKit</span>
+                                    <span>Machine Learning</span>
+                                    <span>Artificial Intelligence</span>
+                                    <span>Database Systems (DBMS)</span>
+                                    <span>Data Structures & Algorithms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Schools -->
+                    <div class="education-card school-card scroll-reveal">
+                        <div class="edu-header">
+                            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                            <div class="edu-meta">
+                                <span class="edu-duration">2021 – 2022</span>
+                                <h3>Higher Secondary Certificate (HSC)</h3>
+                                <h4>Lakshmi Matric Higher Secondary School, Chennai</h4>
+                            </div>
+                        </div>
+                        <div class="edu-body">
+                            <div class="edu-stat">
+                                <span class="stat-lbl">Final Score Percentage:</span>
+                                <span class="stat-val">81.33%</span>
+                            </div>
+                            <p class="edu-desc">Focused on Advanced Mathematics, Physics, Chemistry, and Computer
+                                Science streams.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-card school-card scroll-reveal">
+                        <div class="edu-header">
+                            <div class="edu-icon"><i class="fa-solid fa-school-flag"></i></div>
+                            <div class="edu-meta">
+                                <span class="edu-duration">2019 – 2020</span>
+                                <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                                <h4>Lakshmi Matric Higher Secondary School, Chennai</h4>
+                            </div>
+                        </div>
+                        <div class="edu-body">
+                            <div class="edu-stat">
+                                <span class="stat-lbl">Final Score Percentage:</span>
+                                <span class="stat-val">85.80%</span>
+                            </div>
+                            <p class="edu-desc">Foundational schooling covering General Sciences, Social Studies,
+                                Mathematics, and Languages.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications subsection -->
+                <div class="certifications-block">
+                    <h3 class="subsection-title scroll-reveal"><i class="fa-solid fa-award"></i> Professional
+                        Certifications</h3>
+                    <div class="certs-grid">
+                        <div class="cert-card scroll-reveal">
+                            <div class="cert-icon"><i class="fa-brands fa-apple"></i></div>
+                            <div class="cert-content">
+                                <h4>Swift Programming Language</h4>
+                                <span class="cert-details">iOS Academy | 20-Hour Deep-Dive Training</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card scroll-reveal">
+                            <div class="cert-icon"><i class="fa-solid fa-terminal"></i></div>
+                            <div class="cert-content">
+                                <h4>Python Essential 1</h4>
+                                <span class="cert-details">CISCO Academy | 45-Hour Certification</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card scroll-reveal">
+                            <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="cert-content">
+                                <h4>Machine Learning Certification</h4>
+                                <span class="cert-details">NoviTech | 30-Hour In-Depth Training</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card scroll-reveal">
+                            <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+                            <div class="cert-content">
+                                <h4>Introduction to AI</h4>
+                                <span class="cert-details">Infosys Springboard | 5-Hour Coursework</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding section-bg" id="contact">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tagline">Communication</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Details -->
+                    <div class="contact-info scroll-reveal fade-left">
+                        <h3>Let's collaborate on your next project!</h3>
+                        <p class="contact-text">
+                            I am actively seeking entry-level opportunities, internships, or collaboration projects in
+                            iOS app engineering and Machine Learning domains. Whether you have a question or want to
+                            chat, my inbox is always open.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-content">
+                                    <span>Send an Email</span>
+                                    <a href="mailto:marunkumar.ak19@gmail.com"
+                                        id="contact-email">marunkumar.ak19@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-content">
+                                    <span>Call / WhatsApp</span>
+                                    <a href="tel:+916382827234" id="contact-phone">+91 63828 27234</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-content">
+                                    <span>Location</span>
+                                    <address id="contact-location">Chennai, Tamilnadu, India - 600050</address>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-circles">
+                            <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener"
+                                aria-label="GitHub Profile" id="contact-git-circle">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/arunkumar-m-0784b4259" target="_blank" rel="noopener"
+                                aria-label="LinkedIn Profile" id="contact-linkedin-circle">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card scroll-reveal fade-right">
+                        <form id="contact-form" class="contact-form" action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Full Name <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="email" id="form-email" name="email" placeholder="john@example.com"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-pen-clip"></i>
+                                    <input type="text" id="form-subject" name="subject"
+                                        placeholder="Project Collaboration Opportunity" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Your Message <span class="required">*</span></label>
+                                <div class="input-wrapper text-area-wrapper">
+                                    <i class="fa-solid fa-message"></i>
+                                    <textarea id="form-message" name="message" rows="5"
+                                        placeholder="Hi Arun, I saw your portfolio and would like to discuss..."
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                                <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin"></i>
+                                    Sending...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-accent">&lt;</span>ArunKumar<span class="logo-accent">.M /&gt;</span>
+                </a>
+                <p>Developing robust user experiences with Swift and intelligent predictions with Python & Machine
+                    Learning.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Sitemap Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social-column">
+                <h4>Find Me Online</h4>
+                <div class="footer-social-links">
+                    <a href="https://github.com/ArunKumar19-AK" target="_blank" rel="noopener" aria-label="GitHub Link"
+                        id="footer-social-github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arunkumar-m-0784b4259" target="_blank" rel="noopener"
+                        aria-label="LinkedIn Link" id="footer-social-linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:marunkumar.ak19@gmail.com" aria-label="Email Link" id="footer-social-email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+916382827234" aria-label="Phone Link" id="footer-social-phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p class="copyright">&copy; 2026 Arun Kumar M. All Rights Reserved. Crafted with care &amp; clean design.
+            </p>
+            <p class="designation">iOS Application Developer | AI/ML Student</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll to top of page">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Form Submission Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
+            <button class="btn btn-primary" id="modal-close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
